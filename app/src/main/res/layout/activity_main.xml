@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询日期:"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text01"
+        android:layout_alignLeft="@id/text01"
+        />
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:text="编辑"
+        android:layout_toRightOf="@id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show"
+        android:layout_alignTop="@id/tvDate"
+        />
+</RelativeLayout>
